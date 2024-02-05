@@ -6,17 +6,17 @@
 #include <ctime>
 #include <cstdlib>
 
-#include "adiciona_palavra.cpp"
-#include "chuta.cpp"
-#include "imprime_cabecalho.cpp"
-#include "imprime_erros.cpp"
-#include "imprime_palavra.cpp"
-#include "le_arquivo.cpp"
-#include "letra_existe.cpp"
-#include "nao_acertou.cpp"
-#include "nao_enforcou.cpp"
-#include "salva_arquivo.cpp"
-#include "sorteia_palavra.cpp"
+#include "adiciona_palavra.hpp"
+#include "chuta.hpp"
+#include "imprime_cabecalho.hpp"
+#include "imprime_erros.hpp"
+#include "imprime_palavra.hpp"
+#include "le_arquivo.hpp"
+#include "letra_existe.hpp"
+#include "nao_acertou.hpp"
+#include "nao_enforcou.hpp"
+#include "salva_arquivo.hpp"
+#include "sorteia_palavra.hpp"
 
 using namespace std;
 

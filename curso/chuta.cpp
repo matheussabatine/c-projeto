@@ -2,10 +2,10 @@
 #include <map>
 #include <vector>
 
-#include "letra_existe.cpp"
-
-std::map<char, bool> chutou;
-std::vector<char> chutes_errados;
+#include "letra_existe.hpp"
+//extern não estou definindo a variável aqui, estou dizendo que ela já foi declarada em outro arquivo 
+extern std::map<char, bool> chutou;
+extern std::vector<char> chutes_errados;
 
 void chuta(){
     std::cout << "Seu chute: ";
