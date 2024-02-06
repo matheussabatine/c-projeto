@@ -1,2 +1,0 @@
-g++ *.cpp -o forca.exe
-./forca.exe

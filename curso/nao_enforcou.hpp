@@ -1,1 +1,0 @@
-bool nao_enforcou();
