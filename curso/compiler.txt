@@ -1,0 +1,9 @@
+g++ *.cpp -o forca.exe
+./forca.exe
+
+
+só compilação
+g++ -c *.cpp
+
+processo linking, junta todos os arquivos objetos em um executável
+g++ *.o -o nome.exe
