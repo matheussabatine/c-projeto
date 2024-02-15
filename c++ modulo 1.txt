@@ -1,0 +1,74 @@
+1 estrutura básica de c++
+
+// C++ program to display "Hello World"
+
+// Header file for input output functions
+#include <iostream>
+using namespace std;
+
+// Main() function: where the execution of
+// program begins
+int main()
+{
+	// Prints hello world
+	cout << "Hello World";
+
+	return 0;
+}
+
+//comentários: // ou /*...*/
+#include: faz parte do pré-compilamento, informa ao compilador para incluir o conteúdo de um arquivo no código-fonte.
+exemplo: #include <iostream>
+//iostream é a biblioteca padrão de funções para entrada e saída de dados.
+namespace: namespace é um espaço que especifica a função,(as funçoes padrões estão guardadas no espaço std)
+exemplo std::cout
+essas funçoes são especificadas para que o compilador não confunda a função desejada(função padrão e função criada com o mesmo nome).
+exemplo std::cout  e  minhafuncao::cout 
+using namespace std: procura todas as funções no espaço especificado(neste caso std)
+
+int main(){} função que contém o programa.
+
+cout << "teste";
+
+cout imprime na tela textos e valores.
+; é utilizada para indicar o fim da expressão.
+
+return 0 é utilizado para retonar valores, neste caso (zero) é utilizado para indicar que o programa executou sem erros
+
+indentação do código: não é nescessária em c++, mas feita para melhorar legibilidade do código
+
+2 variáveis
+
+váriavel é uma locação de memória para guardar dados, devem ser declaradas e seus nomes não devem começar com um número
+exemplo 
+int numero;
+string palavra, nome;
+
+tipos
+constante: valor constante(não muda).
+const int a;
+outra maneira de declara
+#define MACRO_NAME replacement_value
+
+#include <iostream> 
+using namespace std; 
+  
+// using #define to create a macro 
+#define Side 5 
+  
+int main() 
+{ 
+    // using constant 
+    const double area = Side * Side; 
+  
+    cout << "The area of square with side 5 is "; 
+    cout << area; 
+  
+    return 0; 
+}
+
+
+static: só permite que a variável seja alterada no mesmo arquivo que foi declarada, não acessível por outros arquivos, mudanças são comuns para todos os objetos(tipo private)
+global: acessível para várias funções
+local: contida dentro de uma função
+
