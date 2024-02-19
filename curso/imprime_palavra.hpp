@@ -1,1 +1,0 @@
-void imprime_palavra();
