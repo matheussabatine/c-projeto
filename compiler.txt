@@ -1,1 +1,10 @@
 g++ main.cpp -o main -l sqlite3
+
+# -l sqlite3
+# é pra compilar junto com sqlite
+
+# -o nome
+# é pra nomear o arquivo executável
+
+g++ -c main.cpp
+# -c apenas traduz o arquivo para código binário,(não compila como se fosse um programa completa), gera um código objeto.
