@@ -1,7 +1,7 @@
 #include "Conta.hpp"
 
-Conta::Conta(int num_conta, std::string nome, int CPF):
-Cliente(nome, CPF),
+Conta::Conta(std::string nome, std::string cpf, int num_conta):
+Pessoa(nome, cpf),
 num_conta(num_conta)
 {
 }
@@ -10,6 +10,19 @@ Conta::~Conta()
 {
 }
 
-std:: string Conta::get_nome(){
-    return nome;
+float Conta::get_saldo(){
+    return saldo;
+}
+
+void Conta::Sacar(float valor){
+    if(valor <= saldo){
+        saldo -= valor;
+
+    }
+
+
+}
+void Conta::Depositar(float valor){
+     saldo += valor;
+
 }

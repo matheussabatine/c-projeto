@@ -1,14 +1,20 @@
-#include "Cliente.hpp"
+#pragma once
+#include "Pessoa.hpp"
 
-class Conta : public Cliente
+#include <string>
+
+class Conta : public Pessoa
 {
 private:
     int num_conta;
     float saldo = 0;
 public:
-    Conta(int num_conta, std::string nome, int CPF);
+    Conta(std::string nome, std::string cpf, int num_conta);
     ~Conta();
-    std::string get_nome();
-};
+    float get_saldo();
+    void Sacar(float valor);
+    void Depositar(float valor);
+    virtual std::string tipo() = 0;
 
+};
 
