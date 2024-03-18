@@ -24,6 +24,7 @@ void Pedido::acrescentar_prato(Item item, int quantidade){
 }
 
 void Pedido::gerar_nota_fiscal(){
+    int tamanho_nome;
 
     std::cout << std::fixed;
     std::cout.precision(2);
@@ -32,10 +33,14 @@ void Pedido::gerar_nota_fiscal(){
     std::cout << "NOTA FISCAL" << std::endl;
     std::cout << std::endl;
     for(int i = 0; i <= pratos.size() - 1; i++){
-        std::cout << pratos[i].get_nome() << "............  " << pratos[i].get_preco() << "/Uni    " << pratos[i].quantidade << " x  R$ " << pratos[i].quantidade * pratos[i].get_preco() << std::endl;
+        tamanho_nome = 35 - pratos[i].get_nome().size();
+        std::string pontos(tamanho_nome, '.');
+
+
+        std::cout << pratos[i].get_nome() << pontos << pratos[i].get_preco() << "/Uni    " << pratos[i].quantidade << " x  R$ " << pratos[i].quantidade * pratos[i].get_preco() << std::endl;
         total += pratos[i].quantidade * pratos[i].get_preco();
     }
-    std::cout << "Taxa de Servico............ R$ " << get_taxa_servico();
+    std::cout << "Taxa de Servico.................... R$ " << get_taxa_servico();
 
     std::cout << std::endl;
     std::cout << "TOTAL: R$ " << total <<std::endl;
